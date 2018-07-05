@@ -1,0 +1,96 @@
+body{
+    color: black;
+    /*background-color: #07103A;*/
+    background-color: #226764;
+}
+
+div {
+	border-radius: 5px;
+}
+
+span:hover {
+    color: gray;
+    font-weight: bold;
+}
+
+.encabezado{
+    margin-top: 10px;
+	margin-bottom: 10px;
+    border: 2px groove white;
+    width: 98%;
+    height: 110px;
+    background-color: #003432;
+    border: 2px groove white;
+    color: white;
+}
+
+.encabezado img{
+    height: 100px;
+    width: 100px;
+}
+
+.encabezado1{
+    float: left;
+    width: 28%;
+}
+
+.encabezado2{
+    float: left;
+    width: 70%;
+    font-family: 'Tangerine', serif;
+    font-size: 60px;
+}
+
+.cuerpo{
+    width: 98%;
+    margin-top: 10px;
+}
+
+.menu{
+    float: left;
+	background-color: #003432;
+    width: 25%;
+    height: 400px;
+	margin-bottom: 10px;
+    border: 2px groove white;
+}
+
+.menu a:link{
+    text-decoration:none;
+    color: white;
+}
+
+.menu a:visited{
+    color: #417C81;
+}
+
+.menu a:hover{
+    color: #FF00FF;
+}
+
+.contenido{
+    float: right;
+    width: 73%;
+    height: 400px;
+    font-family: 'Song Myung', serif;
+    font-size: 16px;
+    background-color: #679B99;
+    border: 2px groove white;
+    margin-bottom: 10px;
+}
+
+.texto {
+    margin: 20px 20px 10px 20px;
+}
+
+img{
+    margin: 5px 0px 5px 5px;
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: white;
+    cursor: move;
+    text-decoration: none;
+}
