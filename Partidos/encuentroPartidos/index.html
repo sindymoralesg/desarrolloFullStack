@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="aplicacion">
+
+  <head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="librerias/angularJS/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+
+  <body>
+    <div class="content-ppal">
+        <div class="cabecera">
+            <div class="titulo">
+                Copa Mundial de la FIFA
+            </div>
+            <div class="imagen"><img src="img/logo.png"></div>
+            
+        </div>
+        <div ng-controller="PrincipalCtrl">
+            <div ng-repeat="x in encuentros" class="content-equipos">
+                <ul>
+                    <div ng-if="$index%2==0" class="locales">
+                            <li> {{x}} </li>
+                    </div>
+                    <div ng-if="$index%2==1" class="visitantes">
+                            <li> {{x}} </li>
+                    </div>
+                </ul>
+            </div>
+            <div ng-repeat="x in banderas" class="content-banderas">
+                    <ul>
+                        <div ng-if="$index%2==0" class="banderasLocales">
+                            <li><img src={{x}}></li>
+                        </div>
+                        <div ng-if="$index%2==1" class="banderasVisitantes">
+                            <li><img src={{x}}></li>
+                        </div>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!--<table >
+        <tr ng-repeat="x in encuentros">
+            <td>{{$index}}</td>
+        </tr>
+    </table>-->
+    <!--
+    <div ng-controller="EjemploCtrl">
+        {{informacionAMostrar}}
+    </div>
+    -->
+  </body>
+
+</html>

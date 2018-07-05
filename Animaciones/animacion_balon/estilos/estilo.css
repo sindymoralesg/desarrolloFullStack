@@ -1,0 +1,27 @@
+#arco{
+    width: 100%;
+    height: 100%;
+}
+#balon{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+@keyframes efecto{
+    from{
+        top: -10px; 
+        left: 200px;
+    }
+    to{
+        top: -470px; 
+        left: 450px;
+    }
+}
+
+.animaciones{
+    position: relative;
+    top: -10px; 
+    animation-name: efecto;
+    animation-duration: 5s;
+}
